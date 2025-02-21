@@ -35,12 +35,20 @@
 // server.listen("3101",()=>{
 //     console.log("server is running.......")
 // })
+// const http=require("http")
+// const server=http.createServer((req,res) => {
+//     res.write("thank you ")
+//     res.end("sathish")
+// }
+// );
+// server.listen("4004",()=>{
+//     console.log("sever is running")
+// })
 const http=require("http")
-const server=http.createServer((req,res) => {
-    res.write("thank you ")
-    res.end("sathish")
-}
-);
-server.listen("4004",()=>{
-    console.log("sever is running")
+const server=http.createServer((req,res)=>{
+    res.write("hello ra ")
+    res.end("battu")
+})
+server.listen("5001",()=>{
+    console.log("hello running")
 })
