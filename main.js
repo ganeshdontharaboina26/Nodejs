@@ -55,9 +55,14 @@
 const http=require("http")
 const server=http.createServer((req,res)=>{
     
-    res.write("hello")
-    res.end("");
-    
+   if(req.method == "POST"){
+    res.write("akash")
+    res.end(" U")
+   }
+    else {
+        res.write("a")
+        res.end("a")
+    }
     
 });
 server.listen("2003",()=>{
