@@ -46,7 +46,7 @@
 // })
 // const http=require("http")
 // const server=http.createServer((req,res)=>{
-//     res.write("hello ra ")
+//     res.write("hello  ")
 //     res.end("battu")
 // })""
 // server.listen("5001",()=>{
@@ -54,10 +54,10 @@
 // })
 const http=require("http")
 const server=http.createServer((req,res)=>{
-    if(req.method=="GET"){
-    res.write("hello bhai")
-    res.end();
-    }
+    
+    res.write("hello")
+    res.end("");
+    
     
 });
 server.listen("2003",()=>{
