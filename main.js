@@ -56,15 +56,15 @@ const http=require("http")
 const server=http.createServer((req,res)=>{
     
    if(req.method == "POST"){
-    res.write("akash")
-    res.end(" U")
+    res.write("ganesh")
+    res.end(" D")
    }
     else {
         res.write("a")
-        res.end("a")
+        res.end("b")
     }
     
 });
-server.listen("2003",()=>{
+server.listen("2005",()=>{
     console.log("it is post server")
 });
