@@ -44,11 +44,22 @@
 // server.listen("4004",()=>{
 //     console.log("sever is running")
 // })
+// const http=require("http")
+// const server=http.createServer((req,res)=>{
+//     res.write("hello ra ")
+//     res.end("battu")
+// })""
+// server.listen("5001",()=>{
+//     console.log("hello running")
+// })
 const http=require("http")
 const server=http.createServer((req,res)=>{
-    res.write("hello ra ")
-    res.end("battu")
-})
-server.listen("5001",()=>{
-    console.log("hello running")
-})
+    if(req.method=="GET"){
+    res.write("hello bhai")
+    res.end();
+    }
+    
+});
+server.listen("2003",()=>{
+    console.log("it is post server")
+});
