@@ -52,25 +52,20 @@
 // server.listen("5001",()=>{
 //     console.log("hello running")
 // })
-// const http=require("http")
-// const server=http.createServer((req,res)=>{
+const http=require("http")
+const server=http.createServer((req,res)=>{
     
-//    if(req.method == "POST"){
-//     res.write("ganesh")
-//     res.end(" D")
-//    }
-//     else {
-//         res.write("a")
-//         res.end("b")
-//     }
+   if(req.method == "POST"){
+    res.write("ganesh")
+    res.end(" D")
+   }
+    else {
+        res.write("a")
+        res.end("b")
+    }
     
-// });
-// server.listen("2005",()=>{
-//     console.log("it is post server")
-// })
-const express= require("express")
-const app=express()
-app.listen("5444", ()=>{
-    console.log("server is servering")
+});
+server.listen("2005",()=>{
+    console.log("it is post server")
 })
-console.log(exprss)
+
