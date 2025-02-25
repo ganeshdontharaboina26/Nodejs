@@ -69,7 +69,8 @@
 //     console.log("it is post server")
 // })
 const express= require("express")
-const app=express();
+const app=express()
 app.listen("5444", ()=>{
     console.log("server is servering")
 })
+console.log(exprss)
