@@ -52,33 +52,33 @@
 // server.listen("5001",()=>{
 //     console.log("hello running")
 // })
-// const http=require("http")
-// const server=http.createServer((req,res)=>{
-    
-//    if(req.method == "POST"){
-//     res.write("ganesh")
-//     res.end(" D")
-//    }
-//     else {
-//         res.write("a")
-//         res.end("b")
-//     }
-    
-// });
-// server.listen("2005",()=>{
-//     console.log("it is post server")
-// })
-
 const http=require("http")
 const server=http.createServer((req,res)=>{
-    if (req.method=="POST"){
-        res.write("pawan kumar ")
-        res.end(" sh")
-    }
-    else{
+    
+   if(req.method == "POST"){
     res.write("ganesh")
-    res.end(" raj")}
+    res.end(" D")
+   }
+    else {
+        res.write("a")
+        res.end("b")
+    }
+    
+});
+server.listen("2005",()=>{
+    console.log("it is post server")
 })
-server.listen("4004",()=>{
-    console.log("aakashu")
-})
+
+// const http=require("http")
+// const server=http.createServer((req,res)=>{
+//     if (req.method === "POST"){
+//         res.write("pawan kumar ")
+//         res.end(" sh")
+//     }
+//     else{
+//     res.write("ganesh")
+//     res.end(" raj")}
+// })
+// server.listen("4004",()=>{
+//     console.log("aakashu")
+// })
