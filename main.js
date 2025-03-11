@@ -71,8 +71,13 @@
 
 const http=require("http")
 const server=http.createServer((req,res)=>{
+    if (req.method=="POST"){
+        res.write("pawan kumar ")
+        res.end( "sherawath")
+    }
+    else{
     res.write("ganesh")
-    res.end(" raj")
+    res.end(" raj")}
 })
 server.listen("4004",()=>{
     console.log("aakashu")
