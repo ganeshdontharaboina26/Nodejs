@@ -73,7 +73,7 @@ const http=require("http")
 const server=http.createServer((req,res)=>{
     if (req.method=="POST"){
         res.write("pawan kumar ")
-        res.end( "sherawath")
+        res.end(" sh")
     }
     else{
     res.write("ganesh")
